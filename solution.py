@@ -109,34 +109,6 @@ def add_to_guesses(guess):
   letters_guessed.append(guess)
   # make global if any issues
 
-# def success(guess):
-#   global underscored_secret_word
-#   global win
-#   print('Correct')
-#   add_to_guesses(guess)
-#   index = 0
-#   for letter in secret_word:
-#     if letter == guess:
-#       # handle the case for when the first letter in the secret word is the guess
-#       if index == 0:
-#         underscored_secret_word = guess + underscored_secret_word[1:]  # apple -> a _ _ _ _ _
-#         print('yooooo 1')
-#       # handle the case for when the guessed letter is not the first or last letter
-#       elif index < (len(secret_word) - 1):
-        
-#         print('yooooo 2')
-#         underscored_secret_word = underscored_secret_word[0:(index * 2)] + guess + " " + underscored_secret_word[(index * 2 + 2):]
-#       else:
-#         print('yooooo 3')
-#         underscored_secret_word = underscored_secret_word[:-2] + guess
-#     index += 1
-    
-#     # check if all letters have been guessed, and if so run win(); otherwise, we'll continue the game
-#     for letter in underscored_secret_word:
-#       if letter == '_':
-#         continue_game()
-#         return
-#     win()
 def success(guess):
   global underscored_secret_word
   global win
